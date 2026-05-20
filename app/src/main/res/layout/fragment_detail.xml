@@ -8,8 +8,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry..."
+        android:text="Menceritakan kehidupan para korban tragedi politik 1965 yang harus hidup di pengasingan luar negeri dan merindukan Indonesia sebagai tanah air mereka."
         android:textSize="14sp"
-        android:lineSpacingExtra="4dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="4dp"/>
 
 </RelativeLayout>

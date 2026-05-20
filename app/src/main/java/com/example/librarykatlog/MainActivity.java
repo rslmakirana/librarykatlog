@@ -13,7 +13,8 @@ import com.example.librarykatlog.R;
 
 public class MainActivity extends Activity {
     // Data sederhana untuk ditampilkan di ListView
-    String[] daftarBuku = {"Bumi - Tere Liye", "Bulan - Tere Liye", "Matahari - Tere Liye"}; //ini nanti diganti pake daftar buku yang ud dikirim tim inspirasi
+    String[] daftarBuku = {"Pulang - Tere Liye", "Bumi Manusia - Pramoedya Ananta Toer", "Cantik Itu Luka - Eka Kurniawan",
+            "Azab dan Sengsara - Merari Siregar", "Di Tanah Lada - Ziggy Zezsyazeoviennazabrizkie", "Cinta Guru Honorer - Sartika Sari"}; //ini nanti diganti pake daftar buku yang ud dikirim tim inspirasi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
