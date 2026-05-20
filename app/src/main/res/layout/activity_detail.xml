@@ -7,38 +7,38 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
-    <ImageView
-        android:id="@+id/imgBuku"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/pulang"
-        android:layout_marginTop="15dp"/>
-       <!--copy dlu gambar nya di drawable trus baru disesuain dicoding sininya -->
-
     <TextView
         android:id="@+id/txtJudulDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgBuku"
-        android:layout_centerHorizontal="true"
+        android:text="Judul Buku"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
 
-    <!-- Container untuk Fragment -->
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imgBuku"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
         android:layout_below="@id/txtJudulDetail"
-        android:layout_marginTop="20dp" />
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Go Back"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:text="Kembali" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imgBuku"
+        android:layout_above="@id/btnBack"
+        android:layout_marginBottom="16dp" />
 
 </RelativeLayout>

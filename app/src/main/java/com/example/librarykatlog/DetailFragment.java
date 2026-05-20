@@ -57,7 +57,22 @@ public class DetailFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail, container, false);
+        // 1. Tangkap dulu tampilannya ke dalam variabel 'view'
+        View view = inflater.inflate(R.layout.fragment_detail, container, false);
+
+        // 2. Hubungkan TextView sinopsis yang ada di XML ke Java
+        // Pastikan ID 'txtSinopsis' ini sesuai dengan ID TextView di file fragment_detail.xml kamu ya
+        android.widget.TextView txtSinopsis = (android.widget.TextView) view.findViewById(R.id.txtSinopsis);
+
+        // 3. Ambil data sinopsis yang tadi dikirim dari MainActivity
+        String sinopsis = getActivity().getIntent().getStringExtra("sinopsis_buku");
+
+        // 4. Masukkan teks sinopsisnya ke dalam TextView
+        if (sinopsis != null) {
+            txtSinopsis.setText(sinopsis);
+        }
+
+        // 5. Tampilkan hasilnya
+        return view;
     }
 }

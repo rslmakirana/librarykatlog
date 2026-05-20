@@ -1,35 +1,40 @@
 package com.example.librarykatlog;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
-import com.example.librarykatlog.R;
+import android.widget.ImageView;
 
 public class MainActivity extends Activity {
-    // Data sederhana untuk ditampilkan di ListView
-    String[] daftarBuku = {"Pulang - Tere Liye", "Bumi Manusia - Pramoedya Ananta Toer", "Cantik Itu Luka - Eka Kurniawan",
-            "Azab dan Sengsara - Merari Siregar", "Di Tanah Lada - Ziggy Zezsyazeoviennazabrizkie", "Cinta Guru Honorer - Sartika Sari"}; //ini nanti diganti pake daftar buku yang ud dikirim tim inspirasi
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView listView = (ListView) findViewById(R.id.listViewBuku);
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftarBuku);
-        listView.setAdapter(adapter);
+        // Memanggil fungsi untuk mengatur klik pada setiap buku
+        aturBuku(R.id.buku1, "Judul Buku 1", "Ini adalah sinopsis buku pertama. Nanti isinya bisa kamu ganti menjadi sangat panjang.", R.drawable.bumi_manusia);
+        aturBuku(R.id.buku2, "Judul Buku 2", "Ini sinopsis buku kedua. Ceritanya berbeda dari buku yang pertama.", R.drawable.cantik_itu_luka);
+        aturBuku(R.id.buku3, "Judul Buku 3", "Sinopsis buku ketiga ada di sini.", R.drawable.azab_sengsara);
+        aturBuku(R.id.buku4, "Judul Buku 4", "Cerita seru di buku keempat...", R.drawable.pulang);
+        aturBuku(R.id.buku5, "Judul Buku 5", "Petualangan baru di buku kelima.", R.drawable.ditanah_lada);
+        aturBuku(R.id.buku6, "Judul Buku 6", "Kisah inspiratif di buku keenam.", R.drawable.mcintaguru_honorer);
+    //    aturBuku(R.id.buku7, "Judul Buku 7", "Misteri yang belum terpecahkan di buku ketujuh.", R.drawable.buku7);
+    //    aturBuku(R.id.buku8, "Judul Buku 8", "Drama kehidupan pada buku kedelapan.", R.drawable.buku8);
+    //    aturBuku(R.id.buku9, "Judul Buku 9", "Penutup yang manis di buku kesembilan.", R.drawable.buku9);
+    }
 
-        // Mengirim data ke activity kedua menggunakan Intent
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    // Fungsi bantuan agar kodingan tidak terlalu panjang dan berulang
+    private void aturBuku(int idImageView, final String judul, final String sinopsis, final int idGambar) {
+        ImageView buku = (ImageView) findViewById(idImageView);
+        buku.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onClick(View v) {
                 Intent pindah = new Intent(MainActivity.this, DetailActivity.class);
-                pindah.putExtra("nama_buku", daftarBuku[position]);
+                pindah.putExtra("nama_buku", judul);
+                pindah.putExtra("sinopsis_buku", sinopsis);
+                pindah.putExtra("gambar_buku", idGambar);
                 startActivity(pindah);
             }
         });

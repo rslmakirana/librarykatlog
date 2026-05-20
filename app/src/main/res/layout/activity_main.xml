@@ -18,10 +18,94 @@
         android:layout_marginBottom="20dp"
         android:textColor="#40E0D0"/>
 
-    <ListView
-        android:id="@+id/listViewBuku"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtTitle" />
+    <ImageView
+        android:id="@+id/buku1"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/txtTitle"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bumi_manusia" />
+
+    <ImageView
+        android:id="@+id/buku2"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/txtTitle"
+        android:layout_toRightOf="@id/buku1"
+        android:layout_marginLeft="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cantik_itu_luka" />
+
+    <ImageView
+        android:id="@+id/buku3"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/txtTitle"
+        android:layout_toRightOf="@id/buku2"
+        android:layout_marginLeft="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/azab_sengsara" />
+
+    <ImageView
+        android:id="@+id/buku4"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buku1"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pulang" />
+
+    <ImageView
+        android:id="@+id/buku5"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buku2"
+        android:layout_toRightOf="@id/buku4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ditanah_lada" />
+
+    <ImageView
+        android:id="@+id/buku6"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buku3"
+        android:layout_toRightOf="@id/buku5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mcintaguru_honorer" />
+
+ <!--   <ImageView
+        android:id="@+id/buku7"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buku4"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/buku7" />
+
+    <ImageView
+        android:id="@+id/buku8"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buku5"
+        android:layout_toRightOf="@id/buku7"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/buku8" />
+
+    <ImageView
+        android:id="@+id/buku9"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/buku6"
+        android:layout_toRightOf="@id/buku8"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/buku9" /> -->
 
 </RelativeLayout>
