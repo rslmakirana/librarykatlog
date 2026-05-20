@@ -15,7 +15,6 @@ public class DetailActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        // Koding Tombol Kembali
         Button btnBack = (Button) findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,7 +23,6 @@ public class DetailActivity extends Activity {
             }
         });
 
-        // Menampilkan Fragment Detail Buku ke dalam container
         FragmentManager fm = getFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         DetailFragment fragment = new DetailFragment();

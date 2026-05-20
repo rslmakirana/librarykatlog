@@ -28,6 +28,13 @@ public class MainActivity extends Activity {
                 "Ceritanya menginspirasi dan penuh pesan tentang pendidikan.", R.drawable.laskar_pelangi);
         aturBuku(R.id.buku9, "Menanti Restu Langit", "Makhasin", "Buku ini menceritakan tentang perjuangan cinta, harapan, dan doa dalam menghadapi kehidupan. Tokohnya belajar menerima takdir dan terus berharap pada restu Tuhan di tengah berbagai ujian hidup. " +
                 "Nuansa ceritanya lebih menyentuh dan penuh motivasi tentang kesabaran.", R.drawable.menanti_restu_l);
+        aturBuku(R.id.buku10, "Layangan Putus", "Mommy ASF", "Buku ini menceritakan tentang rumah tangga yang awalnya terlihat sempurna, namun berubah karena hadirnya orang ketiga. Tokoh utamanya harus menghadapi rasa kecewa, sakit hati, dan perjuangan mempertahankan keluarga. " +
+                "Ceritanya emosional dan banyak membahas tentang kesabaran serta ketegaran seorang istri.", R.drawable.layangan_putus);
+        aturBuku(R.id.buku11, "When It's Real", "Erin Watt", "Novel ini bercerita tentang Vaughn, seorang musisi terkenal, yang berpura-pura pacaran dengan Oakley demi memperbaiki citra publiknya. Awalnya hubungan mereka hanya settingan, tetapi lama-kelamaan muncul perasaan sungguhan. " +
+                "Ceritanya romantis, ringan, dan penuh drama remaja.", R.drawable.wir);
+        aturBuku(R.id.buku12, "Dikta Dan Hukum", "Dhia'an Farah", "Buku ini menceritakan tentang Nadhira Aisha, seorang gadis yang harus menghadapi penyakit serius di usianya yang masih muda. Di tengah rasa takut dan sakit yang ia alami, hadir Dikta, sosok laki-laki yang selalu menemani dan memberi semangat untuknya. " +
+                "Awalnya hubungan mereka terlihat biasa saja, tetapi lama-kelamaan tumbuh rasa nyaman dan kasih sayang di antara keduanya. " +
+                "Cerita ini penuh dengan perjuangan, pengorbanan, persahabatan, dan cinta yang menguras emosi.", R.drawable.dikta_dan_hukum);
     }
 
     private void aturBuku(int idImageView, final String judul, final String author, final String sinopsis, final int idGambar) {

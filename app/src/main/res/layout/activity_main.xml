@@ -111,7 +111,51 @@
             android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
             android:src="@drawable/menanti_restu_l" />
+
+        <TextView
+            android:id="@+id/txtRekomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended For You"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/buku7"
+            android:layout_marginTop="10dp"
+            android:textColor="#40E0D0"/>
+
+        <ImageView
+            android:id="@+id/buku10"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/txtRekomen"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/layangan_putus" />
+
+        <ImageView
+            android:id="@+id/buku11"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_toRightOf="@id/buku10"
+            android:layout_below="@id/txtRekomen"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wir" />
+
+        <ImageView
+            android:id="@+id/buku12"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_toRightOf="@id/buku11"
+            android:layout_below="@id/txtRekomen"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dikta_dan_hukum" />
     </RelativeLayout>
+
+
 
 
 </RelativeLayout>
