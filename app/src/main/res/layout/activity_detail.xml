@@ -7,25 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
-    <TextView
-        android:id="@+id/txtJudulDetail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Judul Buku"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp" />
-
-    <ImageView
-        android:id="@+id/imgBuku"
-        android:layout_width="150dp"
-        android:layout_height="220dp"
-        android:layout_below="@id/txtJudulDetail"
-        android:layout_centerHorizontal="true"
-        android:scaleType="centerCrop"
-        android:layout_marginBottom="16dp" />
-
     <Button
         android:id="@+id/btnBack"
         android:layout_width="match_parent"
@@ -37,7 +18,6 @@
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/imgBuku"
         android:layout_above="@id/btnBack"
         android:layout_marginBottom="16dp" />
 
