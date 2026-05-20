@@ -22,11 +22,12 @@ public class MainActivity extends Activity {
         aturBuku(R.id.buku6, "Misteri Cinta Guru Honorer", "Sartika Sari", "Novel Misteri Cinta Guru Honorer menceritakan perjuangan seorang guru honorer bernama Alya yang harus menghadapi kerasnya kehidupan dengan gaji minim dan berbagai tekanan pekerjaan. " +
                 "Di tengah kesulitannya, Alya terjebak dalam kisah cinta yang penuh rahasia dan konflik. Kehadiran seseorang dari masa lalu membuat hidupnya berubah dan menghadirkan misteri yang perlahan terungkap. Novel ini menggambarkan perjuangan, pengorbanan, persahabatan, " +
                 "dan arti cinta yang sebenarnya dalam kehidupan seorang guru honorer.", R.drawable.mcintaguru_honorer);
-
-        // Mengaktifkan buku 7, 8, 9 (Untuk sementara pakai gambar yang ada dulu agar tidak merah)
-    //    aturBuku(R.id.buku7, "Judul Buku 7", "Penulis Buku 7", "Ini adalah sinopsis untuk buku ketujuh.", R.drawable.bumi_manusia);
-    //    aturBuku(R.id.buku8, "Judul Buku 8", "Penulis Buku 8", "Ini adalah sinopsis untuk buku kedelapan.", R.drawable.cantik_itu_luka);
-     //   aturBuku(R.id.buku9, "Judul Buku 9", "Penulis Buku 9", "Ini adalah sinopsis untuk buku kesembilan.", R.drawable.azab_sengsara);
+        aturBuku(R.id.buku7, "Dilan 1990", "Pidi Baiq", "Novel ini menceritakan kisah cinta remaja antara Dilan dan Milea saat SMA tahun 1990 di Bandung. Dilan dikenal sebagai cowok unik, romantis, dan suka memberi kejutan. Cara pendekatannya yang beda membuat Milea perlahan jatuh hati. " +
+                "Ceritanya ringan, lucu, dan banyak kutipan romantis yang terkenal.", R.drawable.dilan);
+        aturBuku(R.id.buku8, "Laskar Pelangi", "Andrea Hirata", "Novel ini mengisahkan perjuangan 10 anak dari Belitung yang tetap semangat sekolah meski hidup dalam keterbatasan. Dengan guru yang penuh dedikasi, mereka belajar tentang persahabatan, mimpi, dan perjuangan hidup. " +
+                "Ceritanya menginspirasi dan penuh pesan tentang pendidikan.", R.drawable.laskar_pelangi);
+        aturBuku(R.id.buku9, "Menanti Restu Langit", "Makhasin", "Buku ini menceritakan tentang perjuangan cinta, harapan, dan doa dalam menghadapi kehidupan. Tokohnya belajar menerima takdir dan terus berharap pada restu Tuhan di tengah berbagai ujian hidup. " +
+                "Nuansa ceritanya lebih menyentuh dan penuh motivasi tentang kesabaran.", R.drawable.menanti_restu_l);
     }
 
     private void aturBuku(int idImageView, final String judul, final String author, final String sinopsis, final int idGambar) {

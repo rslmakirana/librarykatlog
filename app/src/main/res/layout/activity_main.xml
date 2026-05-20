@@ -16,6 +16,7 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="24dp"
+        android:layout_marginTop="10dp"
         android:textColor="#40E0D0"/>
 
     <RelativeLayout
@@ -79,37 +80,38 @@
             android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
             android:src="@drawable/mcintaguru_honorer" />
+
+        <ImageView
+            android:id="@+id/buku7"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/buku4"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dilan" />
+
+        <ImageView
+            android:id="@+id/buku8"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/buku5"
+            android:layout_toRightOf="@id/buku4"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/laskar_pelangi" />
+
+        <ImageView
+            android:id="@+id/buku9"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_below="@id/buku6"
+            android:layout_toRightOf="@id/buku5"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menanti_restu_l" />
     </RelativeLayout>
 
- <!--   <ImageView
-        android:id="@+id/buku7"
-        android:layout_width="100dp"
-        android:layout_height="140dp"
-        android:layout_below="@id/buku4"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/buku7" />
-
-    <ImageView
-        android:id="@+id/buku8"
-        android:layout_width="100dp"
-        android:layout_height="140dp"
-        android:layout_below="@id/buku5"
-        android:layout_toRightOf="@id/buku7"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/buku8" />
-
-    <ImageView
-        android:id="@+id/buku9"
-        android:layout_width="100dp"
-        android:layout_height="140dp"
-        android:layout_below="@id/buku6"
-        android:layout_toRightOf="@id/buku8"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/buku9" /> -->
 
 </RelativeLayout>

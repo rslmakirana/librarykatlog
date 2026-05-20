@@ -2,6 +2,7 @@ package com.example.librarykatlog;
 
 import android.app.Activity;
 import android.app.FragmentManager;
+;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,7 @@ public class DetailActivity extends Activity {
         Button btnBack = (Button) findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 finish();
             }
         });
