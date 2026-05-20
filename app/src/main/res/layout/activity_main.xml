@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -11,151 +11,21 @@
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
         android:text="Library Katalog"
+        android:textColor="#40E0D0"
         android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#40E0D0"/>
+        android:textStyle="bold" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtTitle"
-        android:layout_centerHorizontal="true">
-
-        <ImageView
-            android:id="@+id/buku1"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bumi_manusia" />
-
-        <ImageView
-            android:id="@+id/buku2"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_toRightOf="@id/buku1"
-            android:layout_marginLeft="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/cantik_itu_luka" />
-
-        <ImageView
-            android:id="@+id/buku3"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_toRightOf="@id/buku2"
-            android:layout_marginLeft="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/azab_sengsara" />
-
-        <ImageView
-            android:id="@+id/buku4"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_below="@id/buku1"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/pulang" />
-
-        <ImageView
-            android:id="@+id/buku5"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_below="@id/buku2"
-            android:layout_toRightOf="@id/buku4"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ditanah_lada" />
-
-        <ImageView
-            android:id="@+id/buku6"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_below="@id/buku3"
-            android:layout_toRightOf="@id/buku5"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/mcintaguru_honorer" />
-
-        <ImageView
-            android:id="@+id/buku7"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_below="@id/buku4"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/dilan" />
-
-        <ImageView
-            android:id="@+id/buku8"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_below="@id/buku5"
-            android:layout_toRightOf="@id/buku4"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/laskar_pelangi" />
-
-        <ImageView
-            android:id="@+id/buku9"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_below="@id/buku6"
-            android:layout_toRightOf="@id/buku5"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/menanti_restu_l" />
-
-        <TextView
-            android:id="@+id/txtRekomen"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Recommended For You"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:layout_below="@+id/buku7"
-            android:layout_marginTop="10dp"
-            android:textColor="#40E0D0"/>
-
-        <ImageView
-            android:id="@+id/buku10"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_below="@id/txtRekomen"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/layangan_putus" />
-
-        <ImageView
-            android:id="@+id/buku11"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_toRightOf="@id/buku10"
-            android:layout_below="@id/txtRekomen"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/wir" />
-
-        <ImageView
-            android:id="@+id/buku12"
-            android:layout_width="100dp"
-            android:layout_height="140dp"
-            android:layout_toRightOf="@id/buku11"
-            android:layout_below="@id/txtRekomen"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/dikta_dan_hukum" />
-    </RelativeLayout>
+    <ListView
+        android:id="@+id/listViewBuku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp" />
 
 
 
 
-</RelativeLayout>
+</LinearLayout>
