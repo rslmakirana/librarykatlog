@@ -21,7 +21,7 @@
         android:layout_toRightOf="@id/imgBukuItem"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:textColor="#000000"
+        android:textColor="#E0E0E0"
         android:textSize="20sp"
         android:textStyle="bold" />
 
